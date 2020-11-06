@@ -11,9 +11,10 @@
 <script src="MyJavaScriptFile.js"></script>
 </head>
 
-<body>
+<body onload="errorLogin()">
     <div class=loginBox>
         <h1>Sign In</h1>
+        <p class="loginError" id="error"></p>
         <form class="loginForm" action="DashBoard.php" name="loginForm" method="POST">
             <p><input type="text" required name="username" class="inputFields" placeholder="Username" id="username"></p>
             <p><input type="password" required name="password" class="inputFields" placeholder="Password" id="password" onkeyup="passwordValidator()"></p>

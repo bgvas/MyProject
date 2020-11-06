@@ -26,3 +26,7 @@ div{
     width: 20%;
     border-radius: 5px;
 }
+.loginError{
+    color: red;
+    
+}

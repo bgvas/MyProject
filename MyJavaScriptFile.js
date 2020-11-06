@@ -7,3 +7,13 @@ function passwordValidator(){
     }
     else document.getElementById("username").innerHTML = "";
 }
+
+function errorLogin(){
+    const url = window.location.search;
+    if(url.includes("errorLogin")){
+       document.getElementById("error").innerHTML = "Error Username or Password. Try again!!!";
+    }
+    if(url.includes("fetchProblem")){
+        document.getElementById("error").innerHTML = "Error while fetching username and password!!!";
+     }
+}
