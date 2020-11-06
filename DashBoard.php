@@ -4,7 +4,7 @@
     if($username == null){
         return "No userName!!!";
     }
-    else echo "Hello".$username
+    else echo "Hello ".$username
 
 
 
