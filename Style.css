@@ -1,0 +1,28 @@
+.bigTitle{
+    text-align: center;
+
+}
+h1{
+    color: blue;
+}
+div{
+    padding: 20px;
+    margin: 20px;
+    border-style: ridge;
+    width: 35%;
+    height: 200px;
+    position: absolute;
+    left: 700px;
+}
+.loginBox{
+    text-align: center;
+}
+.spanBox{
+    padding:5px;
+    margin: 5px;
+    border: 10px;
+}
+.inputFields{
+    width: 20%;
+    border-radius: 5px;
+}
