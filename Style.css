@@ -10,12 +10,12 @@ div{
     margin: 20px;
     border-style: ridge;
     width: 35%;
-    height: 200px;
-    position: absolute;
+    height: 400px;
     left: 700px;
 }
 .loginBox{
     text-align: center;
+    height:400px;
 }
 .spanBox{
     padding:5px;

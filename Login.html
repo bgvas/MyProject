@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <title>Login Page</title>
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
@@ -9,16 +10,18 @@
 <link rel="stylesheet" href="Style.css">
 <script src="MyJavaScriptFile.js"></script>
 </head>
-<body>
-<div class=loginBox>
-    <h1>Sign In</h1>
-    <form class="loginForm" action="post" name="loginForm">
-        
-        <p><input type="text" required name="username" class="inputFields" placeholder="Username" id="username"></p>
-        <p><input type="password" required name="password" class="inputFields" placeholder="Password" id="password" onkeypress="passwordValidator()"></p>
-        
-    </form>
 
-</div>
+<body>
+    <div class=loginBox>
+        <h1>Sign In</h1>
+        <form class="loginForm" action="DashBoard.php" name="loginForm" method="POST">
+            <p><input type="text" required name="username" class="inputFields" placeholder="Username" id="username"></p>
+            <p><input type="password" required name="password" class="inputFields" placeholder="Password" id="password" onkeyup="passwordValidator()"></p>
+            <p><input type="submit" class="button" value="Press to Login..." /></p>
+        </form> 
+
+        <p><a href="">Forgot your password?</a></p>
+         <p><a href="">Sign up if you are new here.</a></p>
+    </div>
 </body>
 </html> 
