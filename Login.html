@@ -12,17 +12,18 @@
 </head>
 
 <body onload="errorLogin()">
-    <div class=loginBox>
-        <h1>Sign In</h1>
-        <p class="loginError" id="error"></p>
-        <form class="loginForm" action="DashBoard.php" name="loginForm" method="POST">
-            <p><input type="text" required name="username" class="inputFields" placeholder="Username" id="username"></p>
-            <p><input type="password" required name="password" class="inputFields" placeholder="Password" id="password" onkeyup="passwordValidator()"></p>
-            <p><input type="submit" class="button" value="Press to Login..." /></p>
-        </form> 
-
-        <p><a href="">Forgot your password?</a></p>
-         <p><a href="">Sign up if you are new here.</a></p>
+    <div class="container">
+        <div class="divCentered">
+            <h1>Sign In</h1>
+            <h2><p class="loginError" id="error"></p></h2>
+            <form action="DashBoard.php" name="loginForm" method="POST">
+                <p><input type="text" required name="username" class="inputFields" placeholder="Username" id="username"></p>
+                <p><input type="password" required name="password" class="inputFields" placeholder="Password" id="password" onkeyup="passwordValidator()"></p>
+                <p><input type="submit" class="buttons" value="Press to Login..." /></p>
+            </form>
+            <p><a href="">Forgot your password?</a></p>
+            <p><a href="">Sign up if you are new here.</a></p>
+        </div>
     </div>
 </body>
 </html> 

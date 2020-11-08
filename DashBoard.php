@@ -1,3 +1,12 @@
+<?php 
+    include 'Authenticator.php';
+    include 'DataBase/UserDataBaseService.php';
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+    if($username == null || $password == null){header("Location: Login.html?result=fetchProblem");}
+    if(!CheckUser($username, $password)){header("Location: Login.html?result=errorLogin");}
+?>
+
 <!DOCTYPE html>
 <title>DashBoard</title>
 
@@ -13,26 +22,7 @@
 
 <body>
     <div>
-        <?php
-            include 'Authenticator.php';
-            include 'DataBase/UserDataBaseService.php';
-            
-            $username = $_POST["username"];
-            $password = $_POST["password"];
-            if($username == null || $password == null){
-               header("Location:Login.html?result=fetchProblem");
-            }
-            
-            $hashedPassword = HashingPassword($password);
-            
-            if(CheckUser($username, $password)){
-                echo "Welcome ".$username;
-            }
-            else echo false;//header("Location:Login.html?result=errorLogin");
-           
-        ?> 
         
     </div>
-
 </body>
 </html>

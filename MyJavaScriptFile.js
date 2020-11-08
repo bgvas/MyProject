@@ -11,7 +11,7 @@ function passwordValidator(){
 function errorLogin(){
     const url = window.location.search;
     if(url.includes("errorLogin")){
-       document.getElementById("error").innerHTML = "Error Username or Password. Try again!!!";
+       document.getElementById("error").innerHTML = "Error Username or Password!!!";
     }
     if(url.includes("fetchProblem")){
         document.getElementById("error").innerHTML = "Error while fetching username and password!!!";
