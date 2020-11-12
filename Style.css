@@ -1,48 +1,46 @@
-.bigTitle{
-    text-align: center;
-}
-.container{
-    position: absolute;
-    width: 100%;
-    border: 1px;
-}
-h1{
-    color: blue;
-}
-.divCentered{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-}
-
-.loginBox{
-    margin: auto;
-    width: 50%;
-    text-align: center;
-    height:400px;
-}
-
-.spanBox{
-    padding:5px;
-    margin: 5px;
-    border: 10px;
-}
-
-.inputFields{
+.sidebar {
+    margin: 0;
+    padding: 0;
     width: 20%;
-    height: 30px;
-    border-radius: 5px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 90%;
+    overflow: auto;
+  }
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 30px;
+    text-decoration: none;
 }
-
-.loginError{
-    color: red;  
-    transition: color 4s;
+.sidebar a.active {
+    background-color: skyblue;
+    color: white;
+  }
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+.selected{
+    background-color: skyblue;
+    height:30px;
+    margin:10px;
+    padding: 20px;
 }
-.buttons{
-    width: 10%;
-    height: 30px;
-    border-radius: 5px;
-}
-
